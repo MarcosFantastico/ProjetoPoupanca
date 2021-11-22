@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjetoPoupança</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Poupança</h1>
+    <form class='row'>
+      <div class="row justify-content-center">
+    <div class="mb-3 col-md-5">
+      <label for="nome" class="form-label">Nome:</label>
+      <input type="nome" class="form-control" id="nome" placeholder="Ex: José">
+    </div>
+
+    <div class="mb-3 col-md-4">
+      <label for="peso" class="form-label">Valor Mensal Aplicado:</label>
+      <input type="number" class="form-control" id="valor_mensal" placeholder = 'Ex: 100'min=1>
+    </div>
+    
+    <div class="mb-3 col-md-4">
+      <label for="tempo" class="form-label">Juros (%):</label>
+      <input type="number" class="form-control text-center" id="jurus" placeholder = 'Ex: 1' min=1>
+    </div>
+
+    <div class="mb-3 col-md-5">
+      <label for="tempo" class="form-label">Número de Parcelas:</label>
+      <input type="number" class="form-control text-center" id="prestacoes" placeholder = 'Ex: 120' min=1>
+    </div>
+    
+    </div>
+    <div class="row justify-content-center">
+      <div id='result'>
+      
+      </div>
+
+      <div class="col-md-4"></div>
+      <div class = "col-md-6">
+      <input type="button" class="btn btn-success" id="calcular" value='Calcular'></input>
+      </div>
+    </div>
+  </div>
+    
+    <footer class="text-center" id='info'></footer>
+
+  </form>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
